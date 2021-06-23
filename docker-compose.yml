@@ -1,0 +1,11 @@
+version: "2.4"
+services:
+  demo-container:
+    container_name: demo-container
+    image: demo-container
+    build:
+      context: ./build/
+    volumes:
+      - type: bind
+        source: .
+        target: c:\DataDir
